@@ -1,0 +1,56 @@
+<div class="app-avatar-group" [class.app-menu-collapsed-group]="isCollapsed">
+  <div class="app-user-profile-avatar" [class.app-user-profile-avatar-collapsed]="isCollapsed">
+    <img [src]="userProfileImage" alt="user image"/>
+  </div>
+  <div class="app-user-profile-text" [class.app-user-profile-text-collapsed]="isCollapsed">
+    <p class="app-user-profile-name">Yerlan Akzhanov</p>
+    <p class="app-user-profile-email">yakzhanov@gmail.com</p>
+  </div>
+</div>
+<ul class="menu-group-list">
+  <!--  Menu group-->
+  <li class="menu-group">
+    <!--  Menu group header-->
+    <div class="menu-group-header">
+      <span>Dashboard</span>
+      <div class="menu-group-header-subtitle">Unique dashboard designs</div>
+    </div>
+    <!--  Menu group items-->
+    <ul class="menu-group-item-list">
+      <li class="menu-group-item" [class.menu-group-item-selected]="true">
+        <i nz-icon nzType="contacts" nzTheme="outline"></i>
+        <a href="#">My connections</a>
+      </li>
+      <li class="menu-group-item">
+        <i nz-icon nzType="paper-clip" nzTheme="outline"></i>
+        <a href="#">My projects</a>
+      </li>
+    </ul>
+  </li>
+
+  <!--  Menu group-->
+  <li class="menu-group">
+    <!--  Menu group header-->
+    <div class="menu-group-header">
+      <span>Content planning</span>
+      <div class="menu-group-header-subtitle">Content management</div>
+    </div>
+    <!--  Menu group items-->
+    <ul class="menu-group-item-list">
+      <li class="menu-group-item" [class.menu-group-item-selected]="false">
+        <i nz-icon nzType="calendar" nzTheme="outline"></i>
+        <a href="#">Schedule</a>
+      </li>
+      <li class="menu-group-item">
+        <i nz-icon nzType="highlight" nzTheme="outline"></i>
+        <a href="#">Topics</a>
+      </li>
+      <li class="menu-group-item">
+        <i nz-icon nzType="book" nzTheme="outline"></i>
+        <a href="#">Materials</a>
+      </li>
+    </ul>
+  </li>
+
+</ul>
+

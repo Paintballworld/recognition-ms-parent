@@ -1,0 +1,32 @@
+<div class="app-avatar-group" [class.app-menu-collapsed-group]="isCollapsed">
+  <div class="app-user-profile-avatar" [class.app-user-profile-avatar-collapsed]="isCollapsed">
+    <img [src]="userProfileImage" alt="user image"/>
+  </div>
+  <div class="app-user-profile-text" [class.app-user-profile-text-collapsed]="isCollapsed">
+    <p class="app-user-profile-name">Yerlan Akzhanov asd sa asfsffasfdsd</p>
+    <p class="app-user-profile-email">yakzhanov@gmail.com dassd asd ad as</p>
+  </div>
+</div>
+<ul nz-menu nzTheme="dark" nzMode="inline" [nzInlineCollapsed]="isCollapsed">
+
+  <li nz-submenu nzTitle="Dashboard" nzIcon="dashboard">
+    <ul>
+      <li nz-menu-item nzMatchRouter>
+        <a routerLink="/welcome">Welcome</a>
+      </li>
+      <li nz-menu-item nzMatchRouter>
+        <a>Monitor</a>
+      </li>
+      <li nz-menu-item nzMatchRouter>
+        <a>Workplace</a>
+      </li>
+    </ul>
+  </li>
+  <li nz-submenu nzOpen nzTitle="Form" nzIcon="form">
+    <ul>
+      <li nz-menu-item nzMatchRouter>
+        <a>Basic Form</a>
+      </li>
+    </ul>
+  </li>
+</ul>
